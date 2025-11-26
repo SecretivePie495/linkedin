@@ -688,19 +688,34 @@
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <div class="holographic rounded-3xl p-8 md:p-12 relative overflow-hidden">
-                    <h3 class="text-2xl md:text-3xl font-bold mb-6 text-white tech-font text-center">Get Your Custom Automation Plan</h3>
+                    <h3 class="text-2xl md:text-3xl font-bold mb-6 text-white tech-font text-center">
+                        Get Your Custom Automation Plan
+                    </h3>
                     <form id="contactForm" class="space-y-6 relative z-10">
                         <div>
                             <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Your Name</label>
-                            <input type="text" id="name" name="name" required class="w-full px-5 py-3 bg-gray-900 border border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter your name">
+                            <input type="text" id="name" name="name" required
+                                   class="w-full px-5 py-3 bg-gray-900 border border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                   placeholder="Enter your name">
                         </div>
                         <div>
                             <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
-                            <input type="email" id="email" name="email" required class="w-full px-5 py-3 bg-gray-900 border border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="your@email.com">
+                            <input type="email" id="email" name="email" required
+                                   class="w-full px-5 py-3 bg-gray-900 border border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                   placeholder="your@email.com">
                         </div>
+                        <!-- NEW: Phone number for SMS + compliance -->
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-300 mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required
+                                   class="w-full px-5 py-3 bg-gray-900 border border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                   placeholder="(555) 555-5555">
+                        </div>
+
                         <div>
                             <label for="project" class="block text-sm font-medium text-gray-300 mb-2">Project Type</label>
-                            <select id="project" name="project" required class="w-full px-5 py-3 bg-gray-900 border border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <select id="project" name="project" required
+                                    class="w-full px-5 py-3 bg-gray-900 border border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                                 <option value="">Select project type</option>
                                 <option>AI Automation</option>
                                 <option>CRM Integration</option>
@@ -710,7 +725,8 @@
                         </div>
                         <div>
                             <label for="project2" class="block text-sm font-medium text-gray-300 mb-2">Industry</label>
-                            <select id="project2" name="project2" required class="w-full px-5 py-3 bg-gray-900 border border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <select id="project2" name="project2" required
+                                    class="w-full px-5 py-3 bg-gray-900 border border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                                 <option value="">Select industry</option>
                                 <option>Finance</option>
                                 <option>Healthcare</option>
@@ -721,7 +737,8 @@
                         </div>
                         <div>
                             <label for="project3" class="block text-sm font-medium text-gray-300 mb-2">Budget Range</label>
-                            <select id="project3" name="project3" required class="w-full px-5 py-3 bg-gray-900 border border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <select id="project3" name="project3" required
+                                    class="w-full px-5 py-3 bg-gray-900 border border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                                 <option value="">Select budget range</option>
                                 <option>$1,000 - $5,000</option>
                                 <option>$5,000 - $10,000</option>
@@ -731,7 +748,8 @@
                         </div>
                         <div>
                             <label for="project4" class="block text-sm font-medium text-gray-300 mb-2">Timeline</label>
-                            <select id="project4" name="project4" required class="w-full px-5 py-3 bg-gray-900 border border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <select id="project4" name="project4" required
+                                    class="w-full px-5 py-3 bg-gray-900 border border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                                 <option value="">Select timeline</option>
                                 <option>Urgent (1-2 weeks)</option>
                                 <option>Standard (3-4 weeks)</option>
@@ -741,13 +759,30 @@
                         </div>
                         <div>
                             <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Project Details</label>
-                            <textarea id="message" name="message" rows="4" required class="w-full px-5 py-3 bg-gray-900 border border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Tell us about your project..."></textarea>
+                            <textarea id="message" name="message" rows="4" required
+                                      class="w-full px-5 py-3 bg-gray-900 border border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                      placeholder="Tell us about your project..."></textarea>
                         </div>
-                        <button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-medium text-lg transition-all duration-300 transform hover:scale-105">
+                        <button type="submit"
+                                class="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-medium text-lg transition-all duration-300 transform hover:scale-105">
                             Submit Form
                         </button>
+
+                        <!-- NEW: SMS consent disclosure (for Toll-Free / 10DLC compliance) -->
+                        <p class="text-xs text-gray-400 leading-relaxed">
+                            By submitting this form, you agree to receive SMS messages from <strong>UTG Media</strong>
+                            about your inquiry, including appointment confirmations, reminders, and service updates.
+                            Msg &amp; data rates may apply. Msg freq varies. Reply <strong>STOP</strong> to opt out,
+                            <strong>HELP</strong> for help. Consent is not a condition of purchase.
+                            See our
+                            <a href="https://utgmedia.com/privacy" class="text-blue-400 hover:text-blue-300">Privacy Policy</a>
+                            and
+                            <a href="https://utgmedia.com/terms" class="text-blue-400 hover:text-blue-300">Terms &amp; Conditions</a>.
+                        </p>
                     </form>
+
                     <div id="formResponse" class="hidden mt-4 p-4 rounded-xl text-center"></div>
+
                     <script>
                         document.getElementById('contactForm').addEventListener('submit', function(e) {
                             e.preventDefault();
@@ -756,6 +791,7 @@
                             const formData = {
                                 name: form.name.value,
                                 email: form.email.value,
+                                phone: form.phone.value,           // NEW: send phone to Make
                                 project: form.project.value,
                                 project2: form.project2.value,
                                 project3: form.project3.value,
@@ -778,12 +814,14 @@
                                 }
                             })
                             .catch(error => {
-                                document.getElementById('formResponse').textContent = 'There was a problem sending your message. Please try again.';
-                                document.getElementById('formResponse').classList.remove('hidden');
+                                const resp = document.getElementById('formResponse');
+                                resp.textContent = 'There was a problem sending your message. Please try again.';
+                                resp.classList.remove('hidden');
                                 console.error('Error:', error);
                             });
                         });
                     </script>
+
                     <div class="absolute -bottom-20 -right-20 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl"></div>
                     <div class="absolute -top-20 -left-20 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl"></div>
                 </div>
@@ -809,7 +847,7 @@
                                 <i class="fab fa-telegram"></i>
                             </a>
                         </div>
-                        <!-- NEW: explicit legal contact for verification -->
+                        <!-- explicit legal contact -->
                         <p class="text-xs text-gray-400">
                             Legal entity: <strong>UTG Media, LLC</strong> (doing business as UTG.AI and UTG Labs).  
                             Business contact: <a href="mailto:support@utgmedia.com" class="text-blue-400 hover:text-blue-300">support@utgmedia.com</a>
@@ -819,6 +857,7 @@
             </div>
         </div>
     </section>
+
     
     <!-- SIMPLE LEGAL SECTIONS FOR LINKS -->
     <section id="about-utg-media" class="py-10 border-t border-gray-800 bg-black/40 px-4">
