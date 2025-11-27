@@ -275,7 +275,6 @@
         }
     </style>
     <!-- Meta Pixel Code -->
-    <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -295,18 +294,17 @@
     <!-- End Meta Pixel Code -->
     
     <script>
-    // Add Lead event on form submission
+    // Add Contact event on form submission (renamed from "Lead" to avoid lead-gen wording)
     document.addEventListener("DOMContentLoaded", function() {
       var form = document.querySelector("form"); // grabs the first form on your page
       if(form){
         form.addEventListener("submit", function() {
-          fbq('track', 'Lead');
+          fbq('track', 'Contact');
         });
       }
     });
     </script>
     
-    <!-- End Meta Pixel Code -->
 </head>
 <body>
     <!-- Favicon -->
@@ -356,7 +354,10 @@
                 </h1>
                 <p class="text-sm sm:text-lg md:text-xl text-gray-300 max-w-2xl mb-6 sm:mb-10 relative">
                     <span class="md:hidden absolute inset-0 bg-black bg-opacity-50 backdrop-filter backdrop-blur-sm rounded-lg"></span>
-                    <span class="relative">We use advanced no-code workflows that streamline tasks, generate leads, and boost evenue in hours, not weeks.</span>
+                    <span class="relative">
+                        We use advanced no-code workflows that streamline tasks, reduce manual work,  
+                        and improve customer experience in hours, not weeks.
+                    </span>
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                     <a href="#contact" class="relative overflow-hidden group px-4 py-2 sm:px-8 sm:py-4 rounded-full font-medium text-sm sm:text-lg bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">
@@ -425,7 +426,8 @@
                     <span class="gradient-text">Technological</span> Capabilities
                 </h2>
                 <p class="text-xl text-gray-300 max-w-4xl mx-auto">
-                    150+ businesses trust our AI systems to automate 10,000+ business using enterprise-grade AI systems. Our cleints see 3-6x ROI within 90 days with eliminating 95% manual errors.
+                    150+ businesses trust our AI systems to automate operations using enterprise-grade AI systems. 
+                    Our clients see 3-6x ROI within 90 days while eliminating 95% of manual errors.
                 </p>
             </div>
             
@@ -442,7 +444,7 @@
                         </div>
                     </div>
                     <p class="text-gray-300 mt-6 mb-6">
-                        Automate repetitive tasks, reduce errors, and free your team to focus on growth
+                        Automate repetitive internal tasks, reduce errors, and free your team to focus on higher-value work.
                     </p>
                     <div class="relative h-40 mt-6 rounded-xl overflow-hidden">
                         <canvas id="xrCanvas" class="w-full h-full bg-black/30"></canvas>
@@ -452,19 +454,20 @@
                     </div>
                 </div>
                 
-                <!-- Feature 2 -->
+                <!-- Feature 2 (UPDATED: no lead gen wording) -->
                 <div class="feature-panel holographic p-8 rounded-2xl transition-all duration-700 delay-100 hover:transform hover:scale-105">
                     <div class="relative">
                         <div class="absolute -left-2 -top-2 w-12 h-12 bg-purple-500 rounded-full opacity-20 blur-sm"></div>
                         <div class="relative flex items-center">
                             <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg flex items-center justify-center mr-4">
-                                <i class="fas fa-brain text-xl"></i>
+                                <i class="fas fa-headset text-xl"></i>
                             </div>
-                            <h3 class="text-2xl font-bold gradient-text tech-font">Lead Generation Automation</h3>
+                            <h3 class="text-2xl font-bold gradient-text tech-font">Customer Service Automation</h3>
                         </div>
                     </div>
                     <p class="text-gray-300 mt-6 mb-6">
-                        Generate qualified leads faster with AI-powered scoring, automated follow-ups, and smarter outreach.
+                        Handle customer requests faster with AI-powered routing, automated status updates, 
+                        appointment confirmations, and helpful reminders — all focused on support, not marketing.
                     </p>
                     <div class="relative h-40 mt-6 rounded-xl overflow-hidden">
                         <div class="absolute inset-0 flex items-center justify-center">
@@ -497,7 +500,8 @@
                         </div>
                     </div>
                     <p class="text-gray-300 mt-6 mb-6">
-                        Connect AI workflows to your CRM and sales tools to automate tasks and keep data accurate.
+                        Connect AI workflows to your CRM and internal tools to keep customer data accurate, 
+                        reduce manual updates, and support better service.
                     </p>
                     <div class="relative h-40 mt-6 rounded-xl overflow-hidden">
                         <div class="absolute inset-0">
@@ -681,7 +685,7 @@
                 <h2 class="text-3xl md:text-5xl font-bold mb-4 tech-font">
                     <span class="gradient-text">Ready to</span> Automate Your Business?
                 </h2>
-                <p class="text-xl text-gray-300 max-w-4xl mx-auto">
+                <p class="text-xl text-gray-300 max-ww-4xl mx-auto">
                     Let's discuss how we can create something extraordinary together.
                 </p>
             </div>
@@ -704,7 +708,7 @@
                                    class="w-full px-5 py-3 bg-gray-900 border border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                                    placeholder="your@email.com">
                         </div>
-                        <!-- NEW: Phone number for SMS + compliance -->
+                        <!-- Phone number for SMS + compliance -->
                         <div>
                             <label for="phone" class="block text-sm font-medium text-gray-300 mb-2">Phone Number</label>
                             <input type="tel" id="phone" name="phone" required
@@ -763,22 +767,32 @@
                                       class="w-full px-5 py-3 bg-gray-900 border border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                                       placeholder="Tell us about your project..."></textarea>
                         </div>
-                        <button type="submit"
-                                class="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-medium text-lg transition-all duration-300 transform hover:scale-105">
-                            Submit Form
-                        </button>
 
-                        <!-- NEW: SMS consent disclosure (for Toll-Free / 10DLC compliance) -->
+                        <!-- NEW: Explicit SMS consent checkbox -->
+                        <div class="flex items-start space-x-3">
+                            <input id="smsConsent" name="smsConsent" type="checkbox" required
+                                   class="mt-1 h-4 w-4 rounded border-gray-600 bg-gray-900 text-blue-500 focus:ring-blue-500">
+                            <label for="smsConsent" class="text-xs text-gray-400 leading-relaxed">
+                                I agree to receive <strong>non-marketing, customer service SMS messages</strong> from 
+                                <strong>UTG Media</strong> related to my inquiry, such as appointment confirmations, 
+                                reminders, and service updates. Msg &amp; data rates may apply. Msg freq varies. 
+                                Reply <strong>STOP</strong> to unsubscribe, <strong>HELP</strong> for help.
+                            </label>
+                        </div>
+
+                        <!-- SMS disclosure + links -->
                         <p class="text-xs text-gray-400 leading-relaxed">
-                            By submitting this form, you agree to receive SMS messages from <strong>UTG Media</strong>
-                            about your inquiry, including appointment confirmations, reminders, and service updates.
-                            Msg &amp; data rates may apply. Msg freq varies. Reply <strong>STOP</strong> to opt out,
-                            <strong>HELP</strong> for help. Consent is not a condition of purchase.
+                            Your consent is not a condition of purchase. We do not send promotional or advertising text messages. 
                             See our
                             <a href="https://utgmedia.com/privacy" class="text-blue-400 hover:text-blue-300">Privacy Policy</a>
                             and
                             <a href="https://utgmedia.com/terms" class="text-blue-400 hover:text-blue-300">Terms &amp; Conditions</a>.
                         </p>
+
+                        <button type="submit"
+                                class="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-medium text-lg transition-all duration-300 transform hover:scale-105">
+                            Submit Form
+                        </button>
                     </form>
 
                     <div id="formResponse" class="hidden mt-4 p-4 rounded-xl text-center"></div>
@@ -791,12 +805,13 @@
                             const formData = {
                                 name: form.name.value,
                                 email: form.email.value,
-                                phone: form.phone.value,           // NEW: send phone to Make
+                                phone: form.phone.value,
                                 project: form.project.value,
                                 project2: form.project2.value,
                                 project3: form.project3.value,
                                 project4: form.project4.value,
-                                message: form.message.value
+                                message: form.message.value,
+                                smsConsent: form.smsConsent.checked ? "yes" : "no"
                             };
                             
                             fetch('https://hook.us1.make.com/lyls6nd7pwhbo060yxlsl48onvubeone', {
@@ -867,7 +882,7 @@
                 UTG.AI and UTG Labs are brands operated by <strong>UTG Media, LLC</strong>, a limited liability company.
             </p>
             <p class="mb-1">
-                Headquarters: <span class="text-gray-400">Dallas, TX </span> <!-- TODO: replace with your real address -->
+                Headquarters: <span class="text-gray-400">Dallas, TX </span>
             </p>
             <p>
                 Primary contact email: <a href="mailto:support@utgmedia.com" class="text-blue-400 hover:text-blue-300">support@utgmedia.com</a>
@@ -887,6 +902,12 @@
                 We do not sell your personal information. We may use trusted third-party providers (such as Calendly, analytics,
                 and CRM tools) to process and store data securely on our behalf.
             </p>
+            <!-- NEW: explicit SMS usage statement -->
+            <p class="mb-2">
+                If you choose to provide your phone number and opt in, we use SMS <strong>only</strong> to send non-marketing, 
+                customer service messages related to your inquiries, such as appointment confirmations, reminders, and 
+                service updates. We do not use SMS for advertising, mass marketing, or lead generation campaigns.
+            </p>
             <p>
                 For any privacy questions or data requests, email us at
                 <a href="mailto:support@utgmedia.com" class="text-blue-400 hover:text-blue-300">support@utgmedia.com</a>.
@@ -901,6 +922,10 @@
                 By using this website, you agree that any automation, consulting, or software services provided by UTG Media, LLC
                 are subject to separate written agreements between you and us. Content on this site is for informational purposes
                 only and does not constitute a guarantee of results.
+            </p>
+            <p class="mb-2">
+                Where SMS is used, it is limited to non-marketing customer support, such as appointment confirmations, 
+                reminders, and service-related updates requested by you. You may opt out at any time by replying STOP to any SMS.
             </p>
             <p>
                 We reserve the right to update or modify these Terms and our services at any time. For questions about these Terms,
